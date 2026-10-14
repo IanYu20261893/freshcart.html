@@ -1,0 +1,452 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YuChoose - Food, Items and Clothing</title>
+</head>
+<body>
+
+<header id="top">
+    <table border="1" width="100%" cellpadding="5" cellspacing="0">
+        <tr>
+            <td>
+                <h1>🛒 YuChoose</h1>
+            </td>
+            <td>
+                <form action="#" method="get">
+                    <label for="search">Search:</label>
+                    <input type="search" id="search" name="search" placeholder="Search products...">
+                    <button type="submit">Search</button>
+                </form>
+            </td>
+            <td>
+                <a href="#cart">🛒 Cart</a>
+            </td>
+            <td>
+                <strong>Ⓨ</strong>
+                <p>YuChoose</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <nav>
+        <button type="button">Home</button>
+        <button type="button">Clothes</button>
+        <button type="button">Accessories</button>
+        <button type="button">Shoes</button>
+        <button type="button">Gadgets</button>
+        <button type="button">Checkout</button>
+    </nav>
+
+    <hr>
+</header>
+
+<main>
+    <section id="home">
+        <h2>Choose Your Style</h2>
+        <p><strong>Welcome to YuChoose!</strong></p>
+        <p>"YOU CHOOSE US, WE CHOOSE YOU"</p>
+        <p><a href="#food"><button type="button">Shop Now</button></a></p>
+    </section>
+
+    <hr>
+
+    <section id="food">
+        <h2>YuAll</h2>
+
+        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+            <tr>
+                <td>
+                    <h3>🧥 Jacket</h3>
+                    <p>Philip Plein Bomber Jacket</p>
+                    <p>Price: <strong>₱1450.00</strong></p>
+                    <button type="button">Buy Now</button>
+                    <button type="button">Add to Cart</button>
+                </td>
+                <td>
+                    <h3>⌚ SmartWatch</h3>
+                    <p>PEJE ZL02CPRO</p>
+                    <p>Price: <strong>₱5,000.00</strong></p>
+                    <button type="button">Buy Now</button>
+                    <button type="button">Add to Cart</button>
+                </td>
+                <td>
+                    <h3>👟 Nike</h3>
+                    <p>Air Max 90 Premium</p>
+                    <p>Price: <strong>₱10,000.00</strong></p>
+                    <button type="button">Buy Now</button>
+                    <button type="button">Add to Cart</button>
+                </td>
+            </tr>
+        </table>
+
+        <h3>YuFeatured Photos</h3>
+
+        <table cellpadding="5" cellspacing="0">
+            <tr>
+                <td>
+                    <figure>
+                        <img src="./jacket.jpg"
+                             alt="Philip Plein" width="250" height="170">
+                        <figcaption>
+                            <strong>Jacket</strong>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure>
+                        <img src="./watch.jpg"
+                             alt="PEJE" width="250" height="170">
+                        <figcaption>
+                            <strong>SmartWatch</strong>
+                        </figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure>
+                        <img src="./shoes.jpg"
+                             alt="Nike" width="250" height="170">
+                        <figcaption>
+                            <strong>Shoes</strong>
+                        </figcaption>
+                    </figure>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="items">
+        <h2>Others</h2>
+
+        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+            <tr>
+                <td>
+                    <h3>🎒 Backpack</h3>
+                    <p>A useful backpack for school and travel.</p>
+                    <p>Price: <strong>₱600.00</strong></p>
+                    <button type="button">Buy Now</button>
+                    <button type="button">Add to Cart</button>
+                </td>
+                <td>
+                    <h3>⌚ Watch</h3>
+                    <p>A simple watch for everyday use.</p>
+                    <p>Price: <strong>₱750.00</strong></p>
+                    <button type="button">Buy Now</button>
+                    <button type="button">Add to Cart</button>
+                </td>
+                <td>
+                    <h3>🎧 Headphones</h3>
+                    <p>Headphones for music and audio.</p>
+                    <p>Price: <strong>₱900.00</strong></p>
+                    <button type="button">Buy Now</button>
+                    <button type="button">Add to Cart</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="clothing">
+        <h2>YuClothes</h2>
+
+        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+            <tr>
+                <td>
+                    <h3>👕 T-Shirt</h3>
+                    <p>A comfortable cotton shirt for everyday wear.</p>
+                    <p>Price: <strong>₱250.00</strong></p>
+                    <label for="shirt-size">Size:</label>
+                    <select id="shirt-size" name="shirt-size">
+                        <option value="S">S</option>
+                        <option value="M" selected>M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <p><button type="button">Buy Now</button></p>
+                    <p><button type="button">Add to Cart</button></p>
+                </td>
+                <td>
+                    <h3>🧥 Hoodie</h3>
+                    <p>A warm hoodie for cool weather.</p>
+                    <p>Price: <strong>₱500.00</strong></p>
+                    <label for="hoodie-size">Size:</label>
+                    <select id="hoodie-size" name="hoodie-size">
+                        <option value="S">S</option>
+                        <option value="M" selected>M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <p><button type="button">Buy Now</button></p>
+                    <p><button type="button">Add to Cart</button></p>
+                </td>
+                <td>
+                    <h3>👖 Jeans</h3>
+                    <p>Classic denim jeans for daily wear.</p>
+                    <p>Price: <strong>₱450.00</strong></p>
+                    <p><button type="button">Buy Now</button></p>
+                    <button type="button">Add to Cart</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="cart">
+        <h2>YuCart</h2>
+
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Subtotal</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nike (Shoes)</td>
+                    <td>₱10,000.00</td>
+                    <td>
+                        <input type="number" name="apples-qty"
+                               min="1" max="20" value="1"
+                               aria-label="Apples quantity">
+                    </td>
+                    <td>₱10,000.00</td>
+                    <td><button type="button">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>T-Shirt</td>
+                    <td>₱250.00</td>
+                    <td>
+                        <input type="number" name="shirt-qty"
+                               min="1" max="20" value="1"
+                               aria-label="T-shirt quantity">
+                    </td>
+                    <td>₱250.00</td>
+                    <td><button type="button">Remove</button></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><strong>Total</strong></td>
+                    <td colspan="2"><strong>₱350.00</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p><a href="#checkout"><button type="button">Proceed to Checkout</button></a></p>
+    </section>
+
+    <hr>
+
+    <section id="checkout">
+        <h2>YuCheckout</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Shipping Details</legend>
+
+                <p>
+                    <label for="full-name">Full name:</label><br>
+                    <input type="text" id="full-name" name="full-name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"
+                           placeholder="you@example.com" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone number:</label><br>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="09XX XXX XXXX">
+                </p>
+
+                <p>
+                    <label for="address">Address:</label><br>
+                    <textarea id="address" name="address"
+                              rows="3" cols="40" required></textarea>
+                </p>
+
+                <p>
+                    <label for="city">City:</label><br>
+                    <input type="text" id="city" name="city"
+                           list="cities" required>
+                    <datalist id="cities">
+                        <option value="Baguio City"></option>
+                        <option value="Manila"></option>
+                        <option value="Quezon City"></option>
+                        <option value="Taguig City"></option>
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="delivery-date">Delivery date:</label><br>
+                    <input type="date" id="delivery-date" name="delivery-date">
+                </p>
+
+                <p>
+                    <label for="delivery-option">Delivery option:</label><br>
+                    <select id="delivery-option" name="delivery-option">
+                        <option value="standard">Standard</option>
+                        <option value="express">Express</option>
+                        <option value="pickup">Store Pick-up</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>YuPayment Method</strong></legend>
+
+               <p>
+    <input type="radio" id="card" name="payment" value="card" checked>
+    <label for="card">Credit / Debit Card</label><br>
+
+    <input type="radio" id="cod" name="payment" value="cod">
+    <label for="cod">Cash on Delivery</label><br>
+
+    <input type="radio" id="ewallet" name="payment" value="ewallet">
+    <label for="ewallet">E-Wallet</label><br>
+
+    <input type="radio" id="yupaylater" name="payment" value="yupaylater">
+    <label for="yupaylater">YuPayLATER</label><br>
+</p>
+
+                <p>
+                    <strong>YuExtras</strong><br>
+
+                    <input type="checkbox" id="gift-wrap"
+                           name="extras" value="gift-wrap">
+                    <label for="gift-wrap">Gift wrap</label><br>
+
+                    <input type="checkbox" id="receipt"
+                           name="extras" value="receipt">
+                    <label for="receipt">Safety Box - Add ₱10.00</label>
+
+                    <input type="checkbox" id="receipt"
+                           name="extras" value="receipt">
+                    <label for="receipt">Include receipt</label>
+
+                </p>
+
+                <p>
+                    <input type="checkbox" id="agree"
+                           name="agree" required>
+                    <label for="agree">
+                        I agree to the
+                        <a href="#terms-info">Terms &amp; Conditions</a>
+                    </label>
+                </p>
+
+                <button type="submit">Place Order</button>
+                <button type="reset">Clear</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <hr>
+
+        <h3>YuReach Us</h3>
+
+        <address>
+            YuChoose Online Store<br>
+            123 General Luna Road<br>
+            Baguio City, Philippines<br>
+            Phone: <a href="tel:+639171234567">09XX XXX XXXX</a><br>
+            Email: <a href="mailto:support@yuchoose.example">support@yuchoose.example</a>
+        </address>
+
+        <h3>YuLeave a Review</h3>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <p>
+                <label for="review-name">Name:</label><br>
+                <input type="text" id="review-name"
+                       name="review-name" required>
+            </p>
+
+            <p>
+                <label for="rating">Rating (1 to 5):</label><br>
+                <input type="range" id="rating" name="rating"
+                       min="1" max="5" value="5">
+            </p>
+
+            <p>
+                <label for="review-text">Your review:</label><br>
+                <textarea id="review-text" name="review-text"
+                          rows="4" cols="40" required></textarea>
+            </p>
+
+            <p>
+                <label for="review-photo">Upload a photo (optional):</label><br>
+                <input type="file" id="review-photo"
+                       name="review-photo" accept="image/*">
+            </p>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section id="links">
+        <h2>Useful Links</h2>
+
+        <ul>
+            <li>
+                <a href="https://www.openstreetmap.org"
+                   target="_blank" rel="noopener">OpenStreetMap</a>
+            </li>
+            <li>
+                <a href="https://maps.google.com"
+                   target="_blank" rel="noopener">Google Maps</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com"
+                   target="_blank" rel="noopener">YuChoose Facebook Page</a>
+            </li>
+            <li><a href="#top">Back to top</a></li>
+        </ul>
+    </section>
+
+    <section id="terms-info">
+        <h2>Terms &amp; Conditions</h2>
+
+        <details>
+            <summary>Read the terms</summary>
+            <ol>
+                <li>Return unused items in their original condition within seven days.</li>
+                <li>Delivery time depends on the selected delivery option and location.</li>
+                <li>Customers must provide accurate shipping and payment information.</li>
+            </ol>
+        </details>
+    </section>
+</main>
+
+<footer>
+    <hr>
+
+    <p>
+        <a href="#home">About Us</a> |
+        <a href="#contact">Contact</a> |
+        <a href="#terms-info">Shipping Policy</a> |
+        <a href="#terms-info">Returns</a>
+    </p>
+
+    <p>&copy; 2026 YuChoose. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+```
