@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +16,8 @@
             <td>
                 <form action="#" method="get">
                     <label for="search">Search:</label>
-                    <input type="search" id="search" name="search" placeholder="Search products...">
+                    <input type="search" id="search" name="search"
+                           placeholder="Search products...">
                     <button type="submit">Search</button>
                 </form>
             </td>
@@ -25,22 +25,30 @@
                 <a href="#cart">🛒 Cart</a>
             </td>
             <td>
-                <strong>Ⓨ</strong>
-                <p>YuChoose</p>
+                <figure>
+                    <img src="./Logo.jpg" alt="YuChoose Logo"
+                         width="150" height="100">
+                    <figcaption><strong>YuChoose</strong></figcaption>
+                </figure>
             </td>
         </tr>
     </table>
 
     <hr>
 
-    <nav>
-        <button type="button">Home</button>
-        <button type="button">Clothes</button>
-        <button type="button">Accessories</button>
-        <button type="button">Shoes</button>
-        <button type="button">Gadgets</button>
-        <button type="button">Checkout</button>
-    </nav>
+<nav>
+    <button type="button" onclick="location.href='#home'">Home</button>
+
+    <button type="button" onclick="location.href='#clothing'">Clothes</button>
+
+    <button type="button" onclick="location.href='#items'">Accessories</button>
+
+    <button type="button" onclick="location.href='#gadgets'">Gadgets</button>
+
+    <button type="button" onclick="location.href='#cart'">Cart</button>
+
+    <button type="button" onclick="location.href='#checkout'">Checkout</button>
+</nav>
 
     <hr>
 </header>
@@ -56,14 +64,14 @@
     <hr>
 
     <section id="food">
-        <h2>YuAll</h2>
+        <h2>YuHome</h2>
 
         <table border="1" cellpadding="10" cellspacing="0" width="100%">
             <tr>
                 <td>
                     <h3>🧥 Jacket</h3>
                     <p>Philip Plein Bomber Jacket</p>
-                    <p>Price: <strong>₱1450.00</strong></p>
+                    <p>Price: <strong>₱1,450.00</strong></p>
                     <button type="button">Buy Now</button>
                     <button type="button">Add to Cart</button>
                 </td>
@@ -90,29 +98,23 @@
             <tr>
                 <td>
                     <figure>
-                        <img src="./jacket.jpg"
-                             alt="Philip Plein" width="250" height="170">
-                        <figcaption>
-                            <strong>Jacket</strong>
-                        </figcaption>
+                        <img src="./jacket.jpg" alt="Philip Plein Jacket"
+                             width="250" height="170">
+                        <figcaption><strong>Jacket</strong></figcaption>
                     </figure>
                 </td>
                 <td>
                     <figure>
-                        <img src="./watch.jpg"
-                             alt="PEJE" width="250" height="170">
-                        <figcaption>
-                            <strong>SmartWatch</strong>
-                        </figcaption>
+                        <img src="./watch.jpg" alt="PEJE SmartWatch"
+                             width="250" height="170">
+                        <figcaption><strong>SmartWatch</strong></figcaption>
                     </figure>
                 </td>
                 <td>
                     <figure>
-                        <img src="./shoes.jpg"
-                             alt="Nike" width="250" height="170">
-                        <figcaption>
-                            <strong>Shoes</strong>
-                        </figcaption>
+                        <img src="./shoes.jpg" alt="Nike Shoes"
+                             width="250" height="170">
+                        <figcaption><strong>Shoes</strong></figcaption>
                     </figure>
                 </td>
             </tr>
@@ -122,7 +124,7 @@
     <hr>
 
     <section id="items">
-        <h2>Others</h2>
+        <h2>YuAccessories</h2>
 
         <table border="1" cellpadding="10" cellspacing="0" width="100%">
             <tr>
@@ -134,16 +136,34 @@
                     <button type="button">Add to Cart</button>
                 </td>
                 <td>
-                    <h3>⌚ Watch</h3>
-                    <p>A simple watch for everyday use.</p>
-                    <p>Price: <strong>₱750.00</strong></p>
+                    <h3>🕶️ Sunglasses</h3>
+                    <p>Stylish sunglasses for everyday use.</p>
+                    <p>Price: <strong>₱350.00</strong></p>
                     <button type="button">Buy Now</button>
                     <button type="button">Add to Cart</button>
                 </td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="gadgets">
+        <h2>YuGadgets</h2>
+
+        <table border="1" cellpadding="10" cellspacing="0" width="100%">
+            <tr>
                 <td>
                     <h3>🎧 Headphones</h3>
                     <p>Headphones for music and audio.</p>
                     <p>Price: <strong>₱900.00</strong></p>
+                    <button type="button">Buy Now</button>
+                    <button type="button">Add to Cart</button>
+                </td>
+                <td>
+                    <h3>⌚ Watch</h3>
+                    <p>A simple watch for everyday use.</p>
+                    <p>Price: <strong>₱750.00</strong></p>
                     <button type="button">Buy Now</button>
                     <button type="button">Add to Cart</button>
                 </td>
@@ -190,7 +210,7 @@
                     <h3>👖 Jeans</h3>
                     <p>Classic denim jeans for daily wear.</p>
                     <p>Price: <strong>₱450.00</strong></p>
-                    <p><button type="button">Buy Now</button></p>
+                    <button type="button">Buy Now</button>
                     <button type="button">Add to Cart</button>
                 </td>
             </tr>
@@ -217,9 +237,9 @@
                     <td>Nike (Shoes)</td>
                     <td>₱10,000.00</td>
                     <td>
-                        <input type="number" name="apples-qty"
+                        <input type="number" name="nike-qty"
                                min="1" max="20" value="1"
-                               aria-label="Apples quantity">
+                               aria-label="Nike shoes quantity">
                     </td>
                     <td>₱10,000.00</td>
                     <td><button type="button">Remove</button></td>
@@ -239,7 +259,7 @@
             <tfoot>
                 <tr>
                     <td colspan="3"><strong>Total</strong></td>
-                    <td colspan="2"><strong>₱350.00</strong></td>
+                    <td colspan="2"><strong>₱10,250.00</strong></td>
                 </tr>
             </tfoot>
         </table>
@@ -258,7 +278,8 @@
 
                 <p>
                     <label for="full-name">Full name:</label><br>
-                    <input type="text" id="full-name" name="full-name" required>
+                    <input type="text" id="full-name"
+                           name="full-name" required>
                 </p>
 
                 <p>
@@ -293,7 +314,8 @@
 
                 <p>
                     <label for="delivery-date">Delivery date:</label><br>
-                    <input type="date" id="delivery-date" name="delivery-date">
+                    <input type="date" id="delivery-date"
+                           name="delivery-date">
                 </p>
 
                 <p>
@@ -309,19 +331,23 @@
             <fieldset>
                 <legend><strong>YuPayment Method</strong></legend>
 
-               <p>
-    <input type="radio" id="card" name="payment" value="card" checked>
-    <label for="card">Credit / Debit Card</label><br>
+                <p>
+                    <input type="radio" id="card" name="payment"
+                           value="card" checked>
+                    <label for="card">Credit / Debit Card</label><br>
 
-    <input type="radio" id="cod" name="payment" value="cod">
-    <label for="cod">Cash on Delivery</label><br>
+                    <input type="radio" id="cod" name="payment"
+                           value="cod">
+                    <label for="cod">Cash on Delivery</label><br>
 
-    <input type="radio" id="ewallet" name="payment" value="ewallet">
-    <label for="ewallet">E-Wallet</label><br>
+                    <input type="radio" id="ewallet" name="payment"
+                           value="ewallet">
+                    <label for="ewallet">E-Wallet</label><br>
 
-    <input type="radio" id="yupaylater" name="payment" value="yupaylater">
-    <label for="yupaylater">YuPayLATER</label><br>
-</p>
+                    <input type="radio" id="yupaylater" name="payment"
+                           value="yupaylater">
+                    <label for="yupaylater">YuPayLATER</label><br>
+                </p>
 
                 <p>
                     <strong>YuExtras</strong><br>
@@ -330,14 +356,13 @@
                            name="extras" value="gift-wrap">
                     <label for="gift-wrap">Gift wrap</label><br>
 
-                    <input type="checkbox" id="receipt"
-                           name="extras" value="receipt">
-                    <label for="receipt">Safety Box - Add ₱10.00</label>
+                    <input type="checkbox" id="safety-box"
+                           name="extras" value="safety-box">
+                    <label for="safety-box">Safety Box - Add ₱10.00</label><br>
 
-                    <input type="checkbox" id="receipt"
+                    <input type="checkbox" id="include-receipt"
                            name="extras" value="receipt">
-                    <label for="receipt">Include receipt</label>
-
+                    <label for="include-receipt">Include receipt</label>
                 </p>
 
                 <p>
@@ -357,7 +382,8 @@
 
     <hr>
 
-        <h3>YuReach Us</h3>
+    <section id="contact">
+        <h2>YuReach Us</h2>
 
         <address>
             YuChoose Online Store<br>
@@ -366,6 +392,17 @@
             Phone: <a href="tel:+639171234567">09XX XXX XXXX</a><br>
             Email: <a href="mailto:support@yuchoose.example">support@yuchoose.example</a>
         </address>
+
+        <h3>Location Map</h3>
+        <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=120.58%2C16.40%2C120.60%2C16.42&layer=mapnik"
+            title="Map showing an area in Baguio City"
+            width="600" height="400">
+        </iframe>
+        <p>
+            <a href="https://www.openstreetmap.org"
+               target="_blank" rel="noopener">View OpenStreetMap</a>
+        </p>
 
         <h3>YuLeave a Review</h3>
 
@@ -441,7 +478,8 @@
         <a href="#home">About Us</a> |
         <a href="#contact">Contact</a> |
         <a href="#terms-info">Shipping Policy</a> |
-        <a href="#terms-info">Returns</a>
+        <a href="#terms-info">Returns</a> |
+        <a href="#top">Back to top</a>
     </p>
 
     <p>&copy; 2026 YuChoose. All rights reserved.</p>
@@ -449,4 +487,3 @@
 
 </body>
 </html>
-```
